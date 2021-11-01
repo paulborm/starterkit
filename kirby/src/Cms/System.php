@@ -157,7 +157,7 @@ class System
      */
     public function isInstallable(): bool
     {
-        return $this->isLocal() === true || $this->app->option('panel.install', true) === true;
+        return $this->isLocal() === true || $this->app->option('panel.install', false) === true;
     }
 
     /**
